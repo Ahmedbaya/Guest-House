@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from landing.engotheme.com/html/lotus/demo/activiti.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 10:59:32 GMT -->
+<head>
+    <meta charset="utf-8">
+    <!-- TITLE -->
+    <title>Activiti</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+   
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head> <app-header></app-header>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body style="position: relative;top: 100px;"> <!--<![endif]-->
+
+    <!-- PRELOADER -->
+   
+    <!-- END / PRELOADER -->
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+
+        <!-- HEADER -->
+        <!-- END / HEADER -->
+
+        <!-- SUB BANNER -->
+    ><section class="section-sub-banner bg-9">
+            <div class="awe-overlay"></div>
+            <div class="sub-banner">
+                <div class="container">
+                    <div class="text text-center">
+                        <h2>ACTIVITI</h2>
+                        <p>Lorem Ipsum is simply dummy text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END / SUB BANNER -->
+
+        <!-- ACTIVITI -->
+        <section class="section-activiti bg-white">
+            <div class="container">
+
+                <div class="activiti">
+
+                    <div class="gallery-cat activiti-cat text-center">
+                        <ul class="list-inline">
+                            <li class="active"><a href="#">!</a></li>
+                            <li><a href="/offre">what</a></li>
+                            <li class="active"><a href="/offre" >do </a></li>
+                            <li><a href="/offre">you want </a></li>
+                            <li class="active"><a href="/offre" >else ?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="activiti_content">
+                        
+                        <div class="row">
+
+                            <!-- ITEM -->
+                            
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                           
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                            
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                          
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                          
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                         
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                            <div class="row">
+                                <!-- Loop through the listOffre and display data for each item -->
+                                <div class="col-md-4 col-xs-6" *ngFor="let offreItem of listOffre |paginate:{itemsPerPage:10,currentPage:p}">
+                                  <div class="activiti_item">
+                                    <div class="img">
+                                      <!-- Accessing properties of each Offre item in the loop -->
+                                      <a href="#"><img [src]="offreItem.image"></a>
+                                    </div>
+                                    <div class="text">
+                                        <h2><a href="#">{{ offreItem.nom }}📍</a></h2>
+                                      <p><a href="#">{{ offreItem.prix }}dt</a></p>
+                                      <p>{{ offreItem.date_deb }}</p>
+                                     <!-- <p>{{ offreItem.prix }}</p>-->
+                                     <a *ngIf="!isLoggedIn" class="awe-btn awe-btn-default btn-medium font-hind f12 bold" (click)="connexion()">Connexion</a>
+                                     <button *ngIf="isLoggedIn"type="submit" (click)="reserver(offreItem)" class="awe-btn awe-btn-default btn-medium font-hind f12 bold">Reserver</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                      
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                           
+                            <!-- END / ITEM -->
+                           <!-- <pagination-controls style="text-align: right;" (pageChange)="p = $event"></pagination-controls>-->
+                        </div>
+
+                        <!-- PAGE NAVIGATION   -->
+                
+                        <!-- END / PAGE NAVIGATION   -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- END / ACTIVITI -->
+        
+        <!-- FOOTER -->
+        <!-- END / FOOTER -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+
+    <!-- LOAD JQUERY -->
+
+</body>
+
+<!-- Mirrored from landing.engotheme.com/html/lotus/demo/activiti.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 10:59:37 GMT -->
+</html>

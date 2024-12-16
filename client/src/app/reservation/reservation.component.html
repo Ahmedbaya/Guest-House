@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from landing.engotheme.com/html/lotus/demo/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Aug 2023 20:19:08 GMT -->
+<head>
+    <meta charset="utf-8">
+    <!-- TITLE -->
+    <title>Index 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<!--[if IE 7]>
+<body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]>
+<body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]>
+<body class="ie9 lt-ie10"> <![endif]-->
+    <app-header></app-header>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body  style="position: relative;top: 80px;"> <!--<![endif]-->
+
+
+<!-- PRELOADER -->
+<div id="preloader">
+    <span class="preloader-dot"></span>
+</div>
+<!-- END / PRELOADER -->
+
+<div id="page-wrap" class="bg-white-2">
+    <!-- HEADER -->
+
+    <!-- END / HEADER -->
+    <!-- BANNER SLIDER -->
+   
+    <!-- END / BANNER SLIDER -->
+    <!-- CHECK AVAILABILITY -->
+    <!-- END / CHECK AVAILABILITY -->
+
+    <!-- ACCOMMODATIONS -->
+
+    <section class="ot-accomd-modations">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 col-lg-offset-3">
+                        <div class="ot-heading pt80 pb30 text-center row-20">
+                            <h2>ACCOMMODATIONS</h2>
+                            <p class="sub pr10 pl10">
+                                It is a long established fact that a reader will be distracted by the readable
+                                content of a page
+                                when looking at its layout
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="ot-accomd-modations-content owl-single" data-single_item="false" data-desktop="1"
+                             data-small_desktop="1"
+                             data-tablet="2" data-mobile="1"
+                             data-nav="false"
+                             data-pagination="false">
+                             <table 
+                             class="table table-striped table-hover">
+                                            <thead>
+                                                <!-- start row -->
+                                                <tr>
+                                                  <th>Id</th>
+                                                    <th>Nom Client</th>
+                                                    <th>Nom Offre</th>
+                                                </tr> 
+                                                <!-- end row -->
+                                            </thead>
+                                            <tbody>
+
+                                                <!-- start row -->
+                                                
+                                                
+                                                <tr *ngFor="let reservation of listReservation">
+                                          
+                                                    <td>{{reservation.id}}</td>
+                                                    <td>{{reservation?.client?.nom}}</td>
+                                                    <td>{{reservation?.offre?.nom}}</td>
+                                                    
+                                                </tr>
+                                                <!-- end row -->
+                                                <!-- start row -->
+                                    
+                                                <!-- end row -->
+                                            </tbody>
+                                           
+                                        </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer-style-2">
+        <!-- FOOTER TOP -->
+        
+        <!-- END / FOOTER TOP -->
+
+        <!-- FOOTER CENTER -->
+        <div class="footer_center bgr-footer">
+            <div class="container">
+                <div class="content pt10 pb60">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="footer-logo clearfix">
+                                <div class="widget widget_logo clearfix">
+                                    <div class="widget-logo text-center">
+                                        <div class="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget widget_tripadvisor clearfix">
+                                    <div class="tripadvisor text-center">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget">
+                                <h4 class="widget-title f20 bold">Information</h4>
+                                <div class="text">
+                                    <p><i class="lotus-icon-location mr10"></i> Kelibia,Tunisia</p>
+                                    <p><i class="lotus-icon-phone mr10"></i> 216-22112211</p>
+                                    <p><i class="fa fa-envelope-o mr10"></i> <a href="https://landing.engotheme.com/cdn-cgi/l/email-protection#3d55585151527d495558515249484e5552495851135e5250"><span class="__cf_email__" data-cfemail="fc9499909093bc889499909388898f9493889990d29f9391">[email&#160;protected]</span></a>
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="widget">
+                                <h4 class="widget-title f20 bold">More Link</h4>
+                                <ul>
+                                    <li><a href="/">Acceuil</a></li>
+                                    <li><a href="/about">A propos</a></li>
+                                    <li><a href="/offre">Offre</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p class="left inline-block f14">&copy; 2017 Lotus Hotel All rights reserved.</p>
+                    <div class="payment pull-right inline-block">
+                        <img src="assets/images/home-3/footer/card.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END / FOOTER CENTER -->
+
+
+    </footer>
+    <!-- END / FOOTER -->
+</div>
+
+<!-- LOAD JQUERY -->
+
+</body>
+
+<!-- Mirrored from landing.engotheme.com/html/lotus/demo/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Aug 2023 20:20:04 GMT -->
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from landing.engotheme.com/html/lotus/demo/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 22:01:50 GMT -->
+<head>
+    <meta charset="utf-8">
+    <!-- TITLE -->
+    <title>Login</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
+    
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <span class="preloader-dot"></span>
+    </div>
+    <!-- END / PRELOADER -->
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+
+        <!-- HEADER -->
+        <app-header>
+        </app-header>
+        <app-menu></app-menu>
+        <!-- END / HEADER -->
+
+        <!-- ACCOUNT --> <app-header></app-header>
+        <section class="section-account parallax bg-11">
+            <div class="awe-overlay"></div>
+            <div class="container">
+                <div class="login-register">
+                    <div class="text text-center">
+                        <h2>LOGIN ACCOUNT</h2>
+                       
+                        <form [formGroup]="loginForm" (ngSubmit)="login()" class="account_form">
+                            <div class="field-form">
+                                <input formControlName="email" type="email" class="field-text" placeholder="email">
+                            </div>
+                            <div class="field-form">
+                                <input formControlName="mdp" type="password" class="field-text" placeholder="Password">
+                                <span class="view-pass"><i class="lotus-icon-view"></i></span>
+                            </div>
+                            <div class="field-form field-submit">
+                                <button type="submit" onsubmit="login()"  class="awe-btn awe-btn-13">Login</button>
+                            </div>
+                        </form>
+                            <span class="account-desc">I don’t have an account  -  <a href="/register">register</a></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END / ACCOUNT -->
+
+        <!-- FOOTER -->
+    
+        <!-- END / FOOTER -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+
+    
+</body>
+
+<!-- Mirrored from landing.engotheme.com/html/lotus/demo/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 22:01:52 GMT -->
+</html>
